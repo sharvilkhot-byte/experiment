@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoyaGo - Travel Gamified</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              duo: {
+                green: '#58CC02',
+                greenDark: '#46A302',
+                blue: '#1CB0F6',
+                blueDark: '#1899D6',
+                yellow: '#FFC800',
+                yellowDark: '#E5A400',
+                orange: '#FF9600',
+                red: '#FF4B4B',
+                purple: '#CE82FF',
+                bone: '#E5E5E5',
+                dark: '#131F24',
+                darkSecondary: '#1F2937',
+                textDark: '#4B4B4B',
+                border: '#E5E5E5'
+              }
+            },
+            fontFamily: {
+              nunito: ['Nunito', 'sans-serif'],
+            },
+            boxShadow: {
+              'duo-sm': '0 2px 0 0 rgba(0,0,0,0.2)',
+              'duo-md': '0 4px 0 0 rgba(0,0,0,0.2)',
+              'duo-green': '0 4px 0 0 #46A302',
+              'duo-blue': '0 4px 0 0 #1899D6',
+              'duo-yellow': '0 4px 0 0 #E5A400',
+              'duo-red': '0 4px 0 0 #D33131',
+              'duo-white': '0 4px 0 0 #E5E5E5',
+              'duo-dark': '0 4px 0 0 #000000',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body { font-family: 'Nunito', sans-serif; }
+      .press-effect:active { transform: translateY(2px); box-shadow: none !important; }
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.11.0"
+  }
+}
+</script>
+</head>
+<body class="bg-white dark:bg-duo-dark text-duo-textDark dark:text-gray-100 transition-colors duration-200">
+    <div id="root"></div>
+</body>
+</html>
